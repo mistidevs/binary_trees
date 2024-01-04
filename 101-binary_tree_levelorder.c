@@ -4,6 +4,7 @@
 * traverse_level - helper function to traverse levels
 * @node: node at current level
 * @level: level one is at
+* @func: function to apply
 *
 * Return: void
 */
@@ -24,7 +25,7 @@ else
 
 
 /**
- * binary_tree_height - Measures the height of a binary tree.
+ * _height - Measures the height of a binary tree.
  * @tree: A pointer to the root node of the tree to measure the height.
  *
  * Return: If tree is NULL, your function must return 0, else return height.
