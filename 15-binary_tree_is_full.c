@@ -15,6 +15,6 @@ if (tree == NULL)
 if (tree->left == NULL && tree->right == NULL)
 	return (1);
 
-return ((tree->left != NULL && tree->right) != NULL &&
+return (tree->left != NULL && tree->right != NULL &&
 binary_tree_is_full(tree->left) && binary_tree_is_full(tree->right));
 }
