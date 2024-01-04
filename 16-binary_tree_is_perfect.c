@@ -38,6 +38,6 @@ if (tree->left == NULL && tree->right == NULL)
 left_height = _height(tree->left);
 right_height = _height(tree->right);
 
-return (left_height == right_height) &&
-	binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right);
+return ((left_height == right_height) &&
+	binary_tree_is_perfect(tree->left) && binary_tree_is_perfect(tree->right));
 }
