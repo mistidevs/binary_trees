@@ -17,8 +17,13 @@ if (tree == NULL)
 
 if (tree->left != NULL)
 	bal_l = 1 + binary_tree_balance(tree->left);
+else
+	bal_l = 0;
+
 if (tree->right != NULL)
 	bal_r = 1 + binary_tree_balance(tree->right);
+else
+	bal_r = 0;
 
 return (bal_l - bal_r);
 }
